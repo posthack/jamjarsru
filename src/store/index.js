@@ -1,16 +1,8 @@
 import { createStore } from "vuex";
-
-const state = {};
-
-const getters = {};
-
-const mutations = {};
-
-const actions = {};
+import cart from "./cart.module";
 
 export default createStore({
-  state,
-  getters,
-  mutations,
-  actions,
+  modules: {
+    cart,
+  },
 });
