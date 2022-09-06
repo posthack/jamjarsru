@@ -7,11 +7,34 @@ const routes = [
     name: "Home",
     component: Home,
   },
-  // about page
   {
     path: "/deserts",
     name: "Deserts",
     component: () => import("@/views/Deserts.vue"),
+  },
+  {
+    path: "/cakes",
+    name: "Cakes",
+    component: () => import("@/views/Cakes.vue"),
+  },
+  {
+    path: "/candybar",
+    name: "Candybar",
+    component: () => import("@/views/Candybar.vue"),
+  },
+  {
+    path: "/special",
+    name: "Special",
+    component: () => import("@/views/Special.vue"),
+  },
+  {
+    path: "/cart",
+    name: "Cart",
+    component: () => import("@/views/Cart.vue"),
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/",
   },
 ];
 
