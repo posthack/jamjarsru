@@ -1,20 +1,22 @@
-# Клон интернет магазина Джем
+# Рекод интернет магазина Джем
 
 <a href="http://imatte.ru">Live demo</a>
 
-### Описание
+<img src="https://i.im.ge/2022/09/06/OWgndx.DZEM-ONLAIN-KONDITERSKAY-1.png" alt="Project preview" />
+
+## Описание
 
 <p>В ~2014 году я сделал интернет магазин <a href="http://jamjars.ru">jamjars.ru</a> на <code>HTML, CSS, jQuery</code></p>
 <p>В этом репозитории я делаю рекод этого проекта с использованием более современных инструментов.</p>
 
-### Стэк
+## Стэк
 - Vue3 + Composition API
 - Vuex
 - Vue Router
 - Vite
 - Supabase (PostgreSQL, Storage, Auth)
 
-### Структура проекта
+## Структура проекта
 
 - `src` - исходный код проекта
     - `assets` - статические файлы
