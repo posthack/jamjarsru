@@ -2,7 +2,7 @@
 
 <a href="http://imatte.ru">Live demo</a>
 
-<img src="https://i.im.ge/2022/09/06/OWgndx.DZEM-ONLAIN-KONDITERSKAY-1.png" alt="Project preview" />
+<img src="https://i.im.ge/2022/09/06/OW8M9S.DZEM-ONLAIN-KONDITERSKAY-2-1.png" alt="Project preview" />
 
 ## Описание
 
