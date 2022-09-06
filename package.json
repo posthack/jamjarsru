@@ -1,0 +1,25 @@
+{
+  "name": "jamjars",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.35.6",
+    "axios": "^0.27.2",
+    "sass": "^1.54.8",
+    "sass-loader": "^13.0.2",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "prettier": "^2.7.1",
+    "vite": "^3.1.0"
+  }
+}
