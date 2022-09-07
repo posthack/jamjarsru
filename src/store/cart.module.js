@@ -70,4 +70,5 @@ export default {
   getters,
   mutations,
   actions,
+  namespaced: true,
 };
