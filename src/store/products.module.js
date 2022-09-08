@@ -36,6 +36,7 @@ const state = {
 const getters = {
   getPageDescription: (state) => (category) => state.pageDescription[category],
   getProducts: (state) => (category) => state.products[category],
+  getCategories: (state) => state.categories,
   getProductById: (state) => (category, id) =>
     state.products[category].find((product) => product.id === id),
 };

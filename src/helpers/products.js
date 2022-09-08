@@ -1,10 +1,8 @@
 import { supabase } from "@/common/supabase.js";
 
-// получаем публичную ссылку на папку с картинками
 export const supabaseImagesUrl = () =>
   supabase.storage.from("images").getPublicUrl("").publicURL;
 
-// получаем список продуктов из выбранной категории
 export const getProductsList = async (category) => {
   const { data, error } = await supabase
     .from(category)

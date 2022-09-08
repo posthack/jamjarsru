@@ -1,5 +1,11 @@
 <script setup>
 import { supabaseImagesUrl } from "@/helpers/products.js";
+import { useStore } from "vuex";
+import { computed } from "vue";
+
+const store = useStore();
+
+const categories = computed(() => store.state.products.categories);
 </script>
 
 <template>
@@ -13,32 +19,11 @@ import { supabaseImagesUrl } from "@/helpers/products.js";
       </div>
       <nav class="header__nav">
         <ul>
-          <li>
+          <li v-for="category in categories" :key="category.id">
             <router-link
               class="header__nav-link"
-              :to="{ name: 'Shop', params: { category: 'deserts' } }"
-              >Десерты</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              class="header__nav-link"
-              :to="{ name: 'Shop', params: { category: 'cakes' } }"
-              >Торты</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              class="header__nav-link"
-              :to="{ name: 'Shop', params: { category: 'candybar' } }"
-              >Кенди бар</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              class="header__nav-link"
-              :to="{ name: 'Shop', params: { category: 'special' } }"
-              >Спецпредложения</router-link
+              :to="{ name: 'Shop', params: { category: category.name } }"
+              >{{ category.label }}</router-link
             >
           </li>
           <li>
