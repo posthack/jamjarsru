@@ -8,24 +8,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/deserts",
-    name: "Deserts",
-    component: () => import("@/views/Deserts.vue"),
-  },
-  {
-    path: "/cakes",
-    name: "Cakes",
-    component: () => import("@/views/Cakes.vue"),
-  },
-  {
-    path: "/candybar",
-    name: "Candybar",
-    component: () => import("@/views/Candybar.vue"),
-  },
-  {
-    path: "/special",
-    name: "Special",
-    component: () => import("@/views/Special.vue"),
+    path: "/shop/:category",
+    name: "Shop",
+    component: () => import("@/views/Products.vue"),
   },
   {
     path: "/cart",

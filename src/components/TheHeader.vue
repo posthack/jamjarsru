@@ -14,22 +14,30 @@ import { supabaseImagesUrl } from "@/helpers/products.js";
       <nav class="header__nav">
         <ul>
           <li>
-            <router-link class="header__nav-link" to="/deserts"
+            <router-link
+              class="header__nav-link"
+              :to="{ name: 'Shop', params: { category: 'deserts' } }"
               >Десерты</router-link
             >
           </li>
           <li>
-            <router-link class="header__nav-link" to="/cakes"
+            <router-link
+              class="header__nav-link"
+              :to="{ name: 'Shop', params: { category: 'cakes' } }"
               >Торты</router-link
             >
           </li>
           <li>
-            <router-link class="header__nav-link" to="/candybar"
+            <router-link
+              class="header__nav-link"
+              :to="{ name: 'Shop', params: { category: 'candybar' } }"
               >Кенди бар</router-link
             >
           </li>
           <li>
-            <router-link class="header__nav-link" to="/special"
+            <router-link
+              class="header__nav-link"
+              :to="{ name: 'Shop', params: { category: 'special' } }"
               >Спецпредложения</router-link
             >
           </li>

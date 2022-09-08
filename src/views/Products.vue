@@ -1,17 +1,16 @@
 <script setup>
-import { ref, computed, onMounted } from "vue";
+import { computed, onMounted, watch } from "vue";
 import { useStore } from "vuex";
+import { useRoute } from "vue-router";
 import SingleProduct from "@/components/SingleProduct.vue";
 
 const store = useStore();
+const route = useRoute();
 
-const products = computed(() => store.getters["deserts/getProducts"]);
-
-const fetchProducts = () => {
-  store.dispatch("deserts/fetchProducts", "deserts");
-};
-
-onMounted(fetchProducts);
+const category = computed(() => route.params.category);
+const products = computed(() =>
+  store.getters["products/getProducts"](category.value)
+);
 </script>
 
 <template>

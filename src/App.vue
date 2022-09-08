@@ -1,6 +1,17 @@
 <script setup>
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
+import { useStore } from "vuex";
+import { onMounted } from "vue";
+
+const store = useStore();
+
+const fetchProducts = () => {
+  store.dispatch("products/fetchProducts");
+};
+onMounted(() => {
+  fetchProducts();
+});
 </script>
 
 <template>
