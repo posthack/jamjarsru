@@ -1,6 +1,6 @@
 # Рекод интернет магазина Джем
 
-<a href="http://imatte.ru">Live demo</a>
+<a href="http://imatte.ru">Live demo</a> (WORK IN PROGRESS)
 
 ![Preview](docs/preview.png)
 
