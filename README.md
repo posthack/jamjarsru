@@ -2,7 +2,7 @@
 
 <a href="http://imatte.ru">Live demo</a>
 
-<img src="https://i.im.ge/2022/09/06/OW8M9S.DZEM-ONLAIN-KONDITERSKAY-2-1.png" alt="Project preview" />
+![Preview](docs/preview.png)
 
 ## Описание
 
@@ -10,6 +10,7 @@
 <p>В этом репозитории я делаю рекод этого проекта с использованием более современных инструментов.</p>
 
 ## Стэк
+
 - Vue3 + Composition API
 - Vuex
 - Vue Router
@@ -19,13 +20,13 @@
 ## Структура проекта
 
 - `src` - исходный код проекта
-    - `assets` - статические файлы
-    - `common` - общие компоненты
-    - `components` - компоненты
-    - `router` - роутер
-    - `store` - vuex хранилище
-    - `views` - страницы
-    - `helpers` - вспомогательные функции
+  - `assets` - статические файлы
+  - `common` - общие компоненты
+  - `components` - компоненты
+  - `router` - роутер
+  - `store` - vuex хранилище
+  - `views` - страницы
+  - `helpers` - вспомогательные функции
 - `public` - статические файлы
 - `dist` - собранный проект
 - `package.json` - файл с зависимостями
